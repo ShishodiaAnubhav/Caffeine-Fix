@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Caffeine Fix</string>
+    <string name="name">नाम</string>
+    <string name="toppings">टॉपिंग</string>
+    <string name="whipped_cream">व्हिप्पड क्रीम</string>
+    <string name="chocolate">चॉकलेट</string>
+    <string name="thank_you">धन्यवाद</string>
+    <string name="quantity">मात्रा</string>
+    <string name="decrement">-</string>
+    <string name="chosen_quantity">1</string>
+    <string name="increment">+</string>
+    <string name="order_summary_email">Caffeine Fix order for <xliff:g id="nameText" example="Amy">%s</xliff:g></string>
+    <string name="order">आदेश</string>
+    <string name="order_summary_name">नाम: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="has_whipped_cream">व्हिप्पड क्रीम है?: <xliff:g id="whippedCream" example="true">%b</xliff:g></string>
+    <string name="has_chocolate">चॉकलेट है?: <xliff:g id="chocolate" example="true">%b</xliff:g></string>
+    <string name="quantity_of_coffee">मात्रा: <xliff:g id="quantity" example="1">%d</xliff:g></string>
+    <string name="total">कुल: <xliff:g id="price" example="5">%s</xliff:g></string>
+</resources>

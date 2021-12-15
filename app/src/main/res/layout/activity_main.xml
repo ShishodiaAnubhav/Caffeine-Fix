@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textCapWords"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_toppings"
+        style="@style/HeaderTextStyle"
+        android:text="@string/toppings"
+        app:layout_constraintTop_toBottomOf="@id/enter_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/whipped_cream_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:text="@string/whipped_cream"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_toppings"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/chocolate_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:text="@string/chocolate"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/whipped_cream_checkbox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_quantity"
+        style="@style/HeaderTextStyle"
+        android:text="@string/quantity"
+        app:layout_constraintTop_toBottomOf="@id/chocolate_checkbox"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/button_decrement"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="decrement"
+        android:text="@string/decrement"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_quantity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/chosen_quantity"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/button_decrement"
+        app:layout_constraintBottom_toBottomOf="@id/button_decrement"
+        app:layout_constraintStart_toEndOf="@id/button_decrement"
+        />
+
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="increment"
+        android:layout_marginStart="8dp"
+        android:text="@string/increment"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text_quantity"
+        app:layout_constraintStart_toEndOf="@id/quantity_text_view"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="submitOrder"
+        android:text="@string/order"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/button_decrement"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

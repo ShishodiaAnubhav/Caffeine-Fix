@@ -1,0 +1,40 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Caffeine Fix</string>
+
+    <string name="name">Name</string>
+
+    <string name="toppings">Toppings</string>
+
+    <string name="chocolate">Chocolate</string>
+
+    <string name="thank_you">Thank You!</string>
+
+    <string name="quantity">Quantity</string>
+
+    <!-- This is the quantity chosen by the user -->
+    <string name="chosen_quantity">1</string>
+
+    <string name="increment">+</string>
+
+    <string name="order">Order</string>
+
+
+    <string name="order_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+
+    <string name="has_whipped_cream">has Whipped Cream?: <xliff:g id="whippedCream" example="true">%b</xliff:g></string>
+
+    <string name="has_chocolate">has Chocolate?: <xliff:g id="chocolate" example="true">%b</xliff:g></string>
+
+    <string name="quantity_of_coffee">Quantity: <xliff:g id="quantity" example="1">%d</xliff:g></string>
+
+    <string name="total">Total: <xliff:g id="price" example="5">%s</xliff:g></string>
+
+
+    <string name="toast_more" translatable="false">You Cannot have more than 100 coffee</string>
+
+    <string name="toast_less" translatable="false">You Cannot have less than 1 coffee</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="decrement">-</string>
+    <string name="order_summary_email">Caffeine Fix order for <xliff:g id="nameText" example="Amy">%s</xliff:g></string>
+
+</resources>
